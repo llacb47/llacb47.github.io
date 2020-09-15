@@ -1,3 +1,5 @@
+// sourcemapped version of https://s.yimg.com/xf/engadget/js/lazysizes.bf61c426.js
+
 (function(window, factory) {
 	var lazySizes = factory(window, window.document, Date);
 	window.lazySizes = lazySizes;
