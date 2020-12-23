@@ -60,20 +60,26 @@ const{replace}="",es=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g,ca=/[&<>'"
 let embeds = [];
 // <!-- https://ww.123moviess.gdn/sonic-the-hedgehog-watch-free/ -->
 embeds.push("&lt;div id='07b02207602203a02206d07703606603006b05405a05305604904602207d' style='height:250px;width:500px'&gt;&lt;/div&gt;&lt;script data-cfasync='false' src='data:text/javascript;base64,dmFyIHBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IAp2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgCiAgICBwYS5zcmMgPSAnaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2xvYWRlcm1haW4uYXBwc3BvdC5jb20vbWFpbi5qcyc7CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHBhLCBzKTs='&gt;&lt;/script&gt;");
-embeds.push('&lt;iframe width="500" height="250" src="//mixdrop.co/e/5ezbgzahc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;');
-embeds.push('&lt;iframe src="https://streamtape.com/e/jAYxDXvY1KCz3yQ/" width="500" height="250" allowfullscreen allowtransparency allow="autoplay" scrolling="no" frameborder="0"&gt;&lt;/iframe&gt;');
-embeds.push('&lt;iframe id="iframe-embed" width="100%" height="250" scrolling="no" frameborder="0" src="https://dood.watch/e/3dxt4m35djtv" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"&gt;&lt;/iframe&gt;');
-embeds.push('&lt;iframe src=&quot;https://videobin.co/embed-sthgzfzcybzk.html&quot; frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=500 height=250 allowfullscreen&gt;&lt;/iframe&gt;');
-embeds.push('&lt;iframe src=&quot;https://nxload.com/embed-HtrvQ0PLrrbi.html&quot; frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=500 height=250 allowfullscreen&gt;&lt;/iframe&gt;');
-embeds.push('&lt;iframe src=&quot;https://vup.to/embed-zxqb3gg827ju.html&quot; width=&quot;500&quot; height=&quot;250&quot; allowfullscreen&gt;&lt;/iframe&gt;')
-embeds.push('&lt;iframe src=&quot;https://aparat.cam/embed-yo3blo9awq33.html&quot; width=&quot;500&quot; height=&quot;250&quot; allowfullscreen&gt;&lt;/iframe&gt;')
-embeds.push('&lt;iframe src=&quot;https://playhydrax.com/?v=NvwPU2YwDH&amp;sub=https://cc.1clickcdn.ru/f1/26/f1261243291bde65c878fc60a90883cc/f1261243291bde65c878fc60a90883cc.vtt&quot; width=&quot;500&quot; height=&quot;250&quot; allowfullscreen&gt;&lt;/iframe&gt;')
-embeds.push('&lt;iframe src=&quot;https://vidnext.net/loadserver.php?id=NTU4OQ==&quot; width=&quot;500&quot; height=&quot;250&quot; allowfullscreen&gt;&lt;/iframe&gt;')
-embeds.push('&lt;iframe src=&quot;https://streamsb.net/embed-lz5xsx2uxuhd.html&quot; frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=500 height=250 allowfullscreen&gt;&lt;/iframe&gt;');
 
-    
+let embedurls = [];
+embedurls.push('//mixdrop.co/e/5ezbgzahc');
+embedurls.push('https://streamtape.com/e/jAYxDXvY1KCz3yQ/');
+embedurls.push('https://dood.watch/e/3dxt4m35djtv');
+embedurls.push('https://videobin.co/embed-sthgzfzcybzk.html');
+embedurls.push('https://nxload.com/embed-HtrvQ0PLrrbi.html');
+embedurls.push('https://vup.to/embed-zxqb3gg827ju.html')
+embedurls.push('https://aparat.cam/embed-yo3blo9awq33.html')
+embedurls.push('https://playhydrax.com/?v=NvwPU2YwDH&sub=https://cc.1clickcdn.ru/f1/26/f1261243291bde65c878fc60a90883cc/f1261243291bde65c878fc60a90883cc.vtt')
+embedurls.push('https://vidnext.net/loadserver.php?id=NTU4OQ==')
+embedurls.push('https://streamsb.net/embed-lz5xsx2uxuhd.html');
+
+//TODO
+let chosensrc = embedurls[embedurls.length-1];
+let embedhtml= `&lt;iframe src=&quot;${chosensrc}&quot; frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=500 height=250 allowfullscreen&gt;&lt;/iframe&gt;`;
+
 let thediv = document.getElementById('myillegalvideo');  
-thediv.innerHTML = unescape(embeds[embeds.length-1]);
+thediv.innerHTML = unescape(embedhtml);
+ 
   </script>
  
 
