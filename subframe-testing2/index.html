@@ -49,14 +49,38 @@
 </head>
 
 <body>
-  <h1>This is a video lol</h1>
-    <div id="myillegalvideo">
-  </div>
+  <h1>This is a video lol</h1> 
+<div id="myillegalvideo">
+<form name="myform">
+  <label for="urlnum">Number:</label>
+  <input type="number" id="urlnum" name="urlnum">&nbsp;&nbsp;&nbsp;
+<input type="submit" value="Submit" id="submitbuttn">
+</form>
+</div>
 
   <script>
 // https://github.com/WebReflection/html-escaper/blob/master/index.js    
-const{replace}="",es=/&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g,ca=/[&<>'"]/g,esca={"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"},pe=e=>esca[e],escape=e=>replace.call(e,ca,pe),unes={"&amp;":"&","&#38;":"&","&lt;":"<","&#60;":"<","&gt;":">","&#62;":">","&apos;":"'","&#39;":"'","&quot;":'"',"&#34;":'"'},cape=e=>unes[e],unescape=e=>replace.call(e,es,cape);
-    
+const {
+  replace
+} = "", es = /&(?:amp|#38|lt|#60|gt|#62|apos|#39|quot|#34);/g, ca = /[&<>'"]/g, esca = {
+  "&": "&amp;",
+  "<": "&lt;",
+  ">": "&gt;",
+  "'": "&#39;",
+  '"': "&quot;"
+}, pe = e => esca[e], escape = e => replace.call(e, ca, pe), unes = {
+  "&amp;": "&",
+  "&#38;": "&",
+  "&lt;": "<",
+  "&#60;": "<",
+  "&gt;": ">",
+  "&#62;": ">",
+  "&apos;": "'",
+  "&#39;": "'",
+  "&quot;": '"',
+  "&#34;": '"'
+}, cape = e => unes[e], unescape = e => replace.call(e, es, cape);
+
 let embeds = [];
 // <!-- https://ww.123moviess.gdn/sonic-the-hedgehog-watch-free/ -->
 embeds.push("&lt;div id='07b02207602203a02206d07703606603006b05405a05305604904602207d' style='height:250px;width:500px'&gt;&lt;/div&gt;&lt;script data-cfasync='false' src='data:text/javascript;base64,dmFyIHBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IAp2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsgCiAgICBwYS5zcmMgPSAnaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2xvYWRlcm1haW4uYXBwc3BvdC5jb20vbWFpbi5qcyc7CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHBhLCBzKTs='&gt;&lt;/script&gt;");
@@ -86,19 +110,17 @@ embedurls.push('https://movcloud.net/embed/wb-LbFzYgd_R?sub_en=https://sub.movie
 embedurls.push('https://v2.vidsrc.me/embed/tt8962124/1-1/');
 embedurls.push('https://mstream.website/wwtx25h8serl'); // mystream - alternate: https://embed.mystream.to/m9o243vs7or7
 embedurls.push('https://streamvid.co/player/fLz9tIlB1ZtGaVE/');
-
-    
 // live streams 
 embedurls.push('https://soccerstreams.co/hdss/ch3.html');
 embedurls.push('https://cast4u.icu/cast/s1.php');
-    
-//TODO
-//let chosensrc = embedurls[embedurls.length-1];
-let embedhtml= `&lt;iframe src=&quot;${chosensrc}&quot; frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=500 height=250 allowfullscreen&gt;&lt;/iframe&gt;`;
-
-let thediv = document.getElementById('myillegalvideo');  
-thediv.innerHTML = unescape(embedhtml);
- 
+//
+let videocontainer = document.getElementById('myillegalvideo');
+document.forms['myform'].addEventListener('submit', event => {
+  event.preventDefault();
+  let chosensrc = embedurls[document.forms['myform']['urlnum'].value];
+  let embedhtml = `&lt;iframe src=&quot;${chosensrc}&quot; frameborder=0 marginwidth=0 marginheight=0 scrolling=no width=500 height=250 allowfullscreen&gt;&lt;/iframe&gt;`;
+  videocontainer.innerHTML = unescape(embedhtml);
+});
   </script>
  
 
