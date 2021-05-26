@@ -1,0 +1,82 @@
+div#zoomd {
+  content: url(https://ps-cdn.zoomd.com/content/oref/Images/magnifier18x18_2.png);
+  /* content: url(https://ps-cdn.zoomd.com/content/oref/Images/magnifier18x18.png); */
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  z-index: 999;
+  margin: 0px 30px 0 10px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+  div#zoomd {
+    display: none;
+  }
+
+  .logoHolder .logo {
+    margin-right: -30px;
+}
+
+  div#zoomd_mobile {
+    content: url(https://ps-cdn.zoomd.com/content/oref/Images/magnifier18x18_2.png);
+    /* content: url(https://ps-cdn.zoomd.com/content/oref/Images/magnifier18x18.png); */
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    left: 5px;
+    right: auto;
+    z-index: 999;
+    margin: 0px 0px 0 10px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 415px) {
+  div#zoomd_mobile {
+      right: 250px;
+  }
+
+  .logoHolder .logo {
+      margin-right: -42px;
+  }
+
+}
+
+
+@media screen and (max-width: 414px) and (min-width: 375px) {
+  div#zoomd_mobile {
+    right: 220px;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 360px) {
+  div#zoomd_mobile {
+    right: 200px;
+  }
+}
+
+
+@media screen and (max-width: 360px) and (min-width: 359px) {
+  div#zoomd_mobile {
+    right: 193px;
+  }
+}
+
+@media screen and (max-width: 358px) and (min-width: 340px) {
+  div#zoomd_mobile {
+    right: 188px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  div#zoomd_mobile {
+    right: 162px;
+  }
+}
+
+
+
+

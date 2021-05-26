@@ -1,0 +1,306 @@
+﻿p.general_subtitle {
+  padding-bottom: 0; }
+
+.back-btn {
+  border: 0;
+  height: 30px;
+  width: 60px;
+  border-radius: 30.1px;
+  background-color: #5062ec;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  cursor: pointer; }
+  .back-btn:hover, .back-btn:focus {
+    text-decoration: none;
+    color: white; }
+
+.dropDownFormGroup:after {
+  content: '\f078';
+  font: normal normal normal 17px/1 FontAwesome;
+  left: 20px;
+  top: 16px;
+  position: absolute;
+  pointer-events: none;
+  color: #0b0b0b; }
+
+.container.footerBottom {
+  background: #F5F7F9; }
+
+.pakar-container {
+  padding: 0 20px;
+  max-width: 600px; }
+  .pakar-container.contactUsPage .breadcrumbs {
+    margin-top: 0px !important;
+    position: relative;
+    top: 40px; }
+  .pakar-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0.8;
+    margin-bottom: 10px; }
+  .pakar-container .divider {
+    border-top: solid 3px #5062ec;
+    height: 1px;
+    width: 100%;
+    max-width: 86px;
+    margin-bottom: 20px; }
+  .pakar-container p {
+    font-size: 16px; }
+    @media only screen and (max-width: 767px) {
+      .pakar-container p {
+        font-family: Heebo;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.28;
+        color: #191919; } }
+
+.pkc-forms {
+  padding: 0 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  float: none !important; }
+  .pkc-forms .form-wrap {
+    margin: 20px 0; }
+    .pkc-forms .form-wrap h2, .pkc-forms .form-wrap .contact_subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .pkc-forms .form-wrap .form-group {
+      margin-bottom: 15px;
+      padding-bottom: 28px;
+      position: relative; }
+      .pkc-forms .form-wrap .form-group .pkc-error {
+        color: #b00020 !important;
+        font-size: 14px;
+        display: inline-block;
+        padding-right: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+      .pkc-forms .form-wrap .form-group input[type]:not([type=checkbox]),
+      .pkc-forms .form-wrap .form-group .selectboxit,
+      .pkc-forms .form-wrap .form-group textarea, .pkc-forms .form-wrap .form-group select {
+        -webkit-appearance: none !important;
+        font-size: 18px;
+        font-weight: 300;
+        border: 0;
+        border-radius: 30.1px;
+        box-shadow: 0 1px 18px 0 rgba(4, 24, 48, 0.13);
+        background-color: #ffffff;
+        min-height: 48px;
+        padding: 14px 20px;
+        color: #0b0b0b;
+        width: 100%; }
+        .pkc-forms .form-wrap .form-group input[type]:not([type=checkbox])::placeholder,
+        .pkc-forms .form-wrap .form-group .selectboxit::placeholder,
+        .pkc-forms .form-wrap .form-group textarea::placeholder, .pkc-forms .form-wrap .form-group select::placeholder {
+          transition: 0.2s opacity;
+          color: #0b0b0b; }
+        .pkc-forms .form-wrap .form-group input[type]:not([type=checkbox]):focus::placeholder,
+        .pkc-forms .form-wrap .form-group .selectboxit:focus::placeholder,
+        .pkc-forms .form-wrap .form-group textarea:focus::placeholder, .pkc-forms .form-wrap .form-group select:focus::placeholder {
+          opacity: 0; }
+      .pkc-forms .form-wrap .form-group textarea {
+        border-radius: 20px;
+        min-height: 200px; }
+      .pkc-forms .form-wrap .form-group .selectboxit-container {
+        width: 100%; }
+        .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit {
+          padding-top: 10px;
+          width: 100% !important; }
+        .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-btn {
+          background: #ffffff; }
+        .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-arrow-container {
+          right: auto;
+          left: 10px; }
+        .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-text {
+          float: right;
+          font-size: 18px;
+          font-family: "Heebo", sans-serif;
+          max-width: 90% !important; }
+        .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-open {
+          background: white;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0; }
+        .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-options {
+          width: 100%;
+          text-align: right;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          border: 0;
+          box-shadow: 20px 0 30 0 rgba(4, 24, 48, 0.1); }
+          .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-options .selectboxit-option-anchor {
+            padding: 10px 20px 10px 10px;
+            height: auto;
+            font-size: 14px; }
+          .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-options .selectboxit-option[data-active] .selectboxit-option-anchor,
+          .pkc-forms .form-wrap .form-group .selectboxit-container .selectboxit-options .selectboxit-focus .selectboxit-option-anchor {
+            background: #dbdbdb;
+            color: black; }
+    .pkc-forms .form-wrap button, .pkc-forms .form-wrap .pkc-submit {
+      color: white;
+      cursor: pointer !important;
+      border: 0;
+      height: 48px;
+      border-radius: 30.1px;
+      background-color: #5062ec;
+      font-weight: 600;
+      font-size: 16px;
+      width: 100%; }
+
+.pkc-modal .modal-dialog {
+  /*top: 25%;*/
+  max-width: 400px;
+  width: 90vw;
+  margin: 0 auto; }
+  .pkc-modal .modal-dialog .modal-content {
+    height: 90vw;
+    max-height: 400px;
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    border-radius: 20px; }
+    .pkc-modal .modal-dialog .modal-content .modal-header {
+      padding: 0;
+      height: 50px;
+      position: relative;
+      border: 0; }
+      .pkc-modal .modal-dialog .modal-content .modal-header .close {
+        font-size: 26px;
+        opacity: 1;
+        float: left;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 50px;
+        box-shadow: 0 1px 18px 0 rgba(2, 19, 67, 0.1);
+        border-bottom-right-radius: 20px; }
+    .pkc-modal .modal-dialog .modal-content .modal-body {
+      font-size: 20px;
+      font-weight: 600;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .pkc-modal .modal-dialog .modal-content .modal-body span {
+        text-align: center; }
+        .pkc-modal .modal-dialog .modal-content .modal-body span img {
+          display: block;
+          margin: 0 auto 10px auto; }
+    .pkc-modal .modal-dialog .modal-content .modal-footer {
+      height: 50px;
+      border: 0;
+      padding: 0; }
+
+.panel-default {
+  border-bottom: solid 1px #d4d4d4 !important; }
+
+.text-center {
+  text-align: center !important; }
+
+/*Datepicker */
+.datepicker-days th.today:hover, .datepicker-months th.today:hover, .datepicker-years th.today:hover {
+  color: black; }
+
+.datepicker-days th.datepicker-switch:hover, .datepicker-months th.datepicker-switch:hover, .datepicker-years th.datepicker-switch:hover {
+  color: black; }
+
+.datepicker-days td.day:hover, .datepicker-months td.day:hover, .datepicker-years td.day:hover {
+  color: black !important; }
+
+.datepicker-days td .year, .datepicker-months td .year, .datepicker-years td .year {
+  color: white; }
+  .datepicker-days td .year:hover, .datepicker-months td .year:hover, .datepicker-years td .year:hover {
+    color: black; }
+
+.datepicker-days td .month, .datepicker-months td .month, .datepicker-years td .month {
+  color: white; }
+  .datepicker-days td .month:hover, .datepicker-months td .month:hover, .datepicker-years td .month:hover {
+    color: black; }
+
+.footerAlertsClose {
+  margin-bottom: 8px; }
+
+.form-group-checkbox-wrapper {
+  margin-bottom: 15px;
+  padding-bottom: 28px; }
+  .form-group-checkbox-wrapper .form-group-checkbox {
+    padding-bottom: 10px; }
+  .form-group-checkbox-wrapper input[type='checkbox'] {
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px; }
+
+panel-default {
+  border-bottom: solid 1px #d4d4d4 !important; }
+
+.pkc-collapse {
+  margin: 20px auto 74px auto; }
+  .pkc-collapse .pkc-collapse-subtitle {
+    font-size: 22px;
+    font-weight: 900;
+    color: #373f79;
+    margin: 20px 0 10px 0; }
+  .pkc-collapse .panel + .panel {
+    margin-top: 0; }
+  .pkc-collapse .panel {
+    background: none;
+    border: 0;
+    border-top: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: 0.3s all; }
+    .pkc-collapse .panel.visible {
+      background-color: #ecedee; }
+      .pkc-collapse .panel.visible .panel-heading,
+      .pkc-collapse .panel.visible .panel-body {
+        border-color: transparent; }
+      .pkc-collapse .panel.visible .panel-title button img {
+        transform: rotate(180deg); }
+    .pkc-collapse .panel .panel-heading {
+      border-radius: 0;
+      background: none;
+      padding: 20px 5px; }
+      .pkc-collapse .panel .panel-heading .panel-title {
+        font-weight: 600;
+        font-size: 16px; }
+        .pkc-collapse .panel .panel-heading .panel-title button {
+          width: 100%;
+          display: inline-block;
+          border: 0;
+          text-align: right;
+          background: transparent;
+          cursor: pointer !important;
+          padding-left: 40px; }
+          @media only screen and (min-width: 767px) {
+            .pkc-collapse .panel .panel-heading .panel-title button {
+              position: relative; } }
+          .pkc-collapse .panel .panel-heading .panel-title button img {
+            float: left;
+            transition: 0.3s transform;
+            position: relative;
+            left: -30px; }
+            @media only screen and (min-width: 767px) {
+              .pkc-collapse .panel .panel-heading .panel-title button img {
+                position: absolute;
+                left: 7px;
+                top: 15%; } }
+    .pkc-collapse .panel .panel-collapse .panel-body {
+      padding-left: 40px;
+      border-radius: 0;
+      border: 0;
+      border-bottom: 0;
+      border-top: 0;
+      font-size: 16px; }

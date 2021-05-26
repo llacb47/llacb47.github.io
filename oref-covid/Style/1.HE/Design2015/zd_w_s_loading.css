@@ -1,0 +1,39 @@
+﻿@charset "utf-8";
+.zd-progress {
+  position: relative;
+}
+.zd-progress span.zd-loader {
+  width: 20px;
+  height: 20px;
+  background: url(3.0/widget-images/loading-md.gif) no-repeat;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  z-index: 999999;
+}
+.zd-progress input[type=text] ~ span.zd-loader, .zd-progress input[type=search] ~ span.zd-loader {
+  right: 5px;
+}
+.zd-progress.zd-rtl span.zd-loader {
+  left: -20px;
+  right: inherit;
+}
+.zd-progress.zd-rtl input[type=text] ~ span.zd-loader, .zd-progress.zd-rtl input[type=search] ~ span.zd-loader {
+  left: 5px;
+  right: inherit;
+}
+.zd-progress.active span.zd-loader {
+  display: inline;
+}
+.zd_li_wrap .zd-progress span.zd-loader {
+    right:0;
+}
+.zd_li_wrap .zd-progress {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.zd_li_wrap .zd-progress.zd-rtl {
+    display:grid;    
+}

@@ -1,0 +1,29 @@
+
+
+/*main slider*/
+
+    @-moz-document url-prefix() {  /*for firefox*/
+     .slider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager { 
+      bottom:14px;
+    }
+    }
+
+/*pikud tv*/
+    @-moz-document url-prefix() { /*for firefox*/
+    .pikudTv .slider .four .small {
+      top:62px;
+      left:-181px;
+    }  
+  }
+
+   @-moz-document url-prefix() {/*for firefox*/
+       .pikudTv .slider .six .playMedium {
+      top:71px;
+        }
+       }
+
+  @-moz-document url-prefix() {/*for firefox*/
+       .pikudTv .slider .two .playMedium {
+      top:90px;
+    }
+   }

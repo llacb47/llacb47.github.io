@@ -1,0 +1,625 @@
+﻿.Duration {
+  font-size: 12px !important; }
+
+/*.picHolderImage, .scenariosImageFixClass {
+    max-height: 115px !important;
+}*/
+@media only screen and (max-width: 768px) {
+  .instruction {
+    background-color: #f5f7f9; } }
+
+.instruction .faq_wrapper h2 {
+  margin-bottom: 18px; }
+
+@media screen and (max-width: 768px) {
+  .instruction .general-instruction {
+    overflow-x: scroll; } }
+
+.instruction .title {
+  width: 100%;
+  min-height: 200px;
+  background-image: linear-gradient(96deg, #5062ec -2%, #24274a 105%); }
+  @media only screen and (max-width: 767px) {
+    .instruction .title {
+      height: 150px; } }
+
+.instruction h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  padding: 60px 0; }
+  @media only screen and (max-width: 767px) {
+    .instruction h1 {
+      font-size: 36px; } }
+
+.instruction h3.mb-0 span {
+  width: 90%;
+  display: inline-block;
+  font-weight: 600; }
+
+.instruction .container {
+  margin-top: 40px; }
+
+.instruction p.intro {
+  font-family: Heebo;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #24263d; }
+  .instruction p.intro.short {
+    text-align: start;
+    max-height: 40px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #24263d;
+    line-height: 1.38; }
+
+.instruction .abstract_text {
+  font-size: 16px !important;
+  color: #24263d;
+  font-weight: normal; }
+  .instruction .abstract_text.ks-html-shell {
+    font-size: 16px !important; }
+  @media only screen and (max-width: 767px) {
+    .instruction .abstract_text {
+      font-size: 14px;
+      text-align: center;
+      /*max-height: 48px;*/ }
+      .instruction .abstract_text.ks-html-shell {
+        font-size: 14px !important; } }
+
+.instruction .abstract_text {
+  font-size: 16px; }
+  .instruction .abstract_text.ks-html-shell {
+    font-size: 16px !important; }
+  @media only screen and (max-width: 767px) {
+    .instruction .abstract_text {
+      font-size: 14px;
+      text-align: start;
+      /*max-height: 48px;*/ }
+      .instruction .abstract_text.ks-html-shell {
+        font-size: 14px !important; } }
+
+.instruction .short {
+  /*font-size: 14px;
+        color: #24263d;*/
+  line-height: 1.3;
+  max-height: 37px;
+  overflow: hidden;
+  text-align: start;
+  font-weight: 400; }
+  @media only screen and (max-width: 767px) {
+    .instruction .short {
+      font-size: 14px;
+      text-align: start;
+      /*max-height: 48px;*/ } }
+
+.instruction .oval img {
+  background: white;
+  padding: 5px;
+  border-radius: 60px; }
+
+.instruction a.show_more {
+  line-height: 1.38;
+  color: #5062ec;
+  text-decoration: none;
+  position: relative;
+  top: 4px; }
+  .instruction a.show_more:focus, .instruction a.show_more:hover {
+    text-decoration: none; }
+
+.instruction .instructions_list_wrapper {
+  margin-top: 37px; }
+
+.instruction h2 {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.22;
+  color: #373f79; }
+  @media only screen and (max-width: 767px) {
+    .instruction h2 {
+      font-size: 18px; } }
+
+.instruction .mask {
+  max-width: 600px;
+  min-height: 80px;
+  border-radius: 10px;
+  box-shadow: 10px 8px 40px 0 rgba(51, 58, 81, 0.16);
+  background-color: #ffffff;
+  margin: 16px 0;
+  padding: 20px 20px 21px 20px;
+  margin-top: 18px; }
+  .instruction .mask .sub_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5062ec; }
+
+.instruction a.sub_instruction, .instruction a.more_instruction {
+  text-decoration: none;
+  color: inherit; }
+
+.instruction .services_wrapper h2 {
+  margin-bottom: 19px; }
+
+.instruction .question {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  min-height: 70px;
+  line-height: 1.25;
+  color: #1b1d2e; }
+
+.instruction .question_wrapper {
+  padding: 20px;
+  min-height: 70px;
+  font-weight: 500;
+  padding-left: 25px;
+  padding-right: 15px; }
+
+.instruction .faq_question.collapsed {
+  background: inherit !important;
+  border-bottom: 1px solid #D4D4D4; }
+
+.instruction .faq_answer {
+  padding-right: 25px;
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-bottom: 15px; }
+
+.instruction .card .faq_answer {
+  padding-right: 25px;
+  margin-top: 20px; }
+
+.instruction .card .card-header h3 {
+  line-height: 1.3; }
+
+.instruction .card .serv-body .ks-html-shell a {
+  color: #143A84; }
+
+.instruction .card .serv-body a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5062ec;
+  text-decoration: none; }
+  .instruction .card .serv-body a:hover, .instruction .card .serv-body a:focus {
+    text-decoration: none;
+    color: #5062ec; }
+
+.instruction .card .card-body {
+  background: #ECEDEE;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #D4D4D4;
+  font-size: 16px; }
+
+.instruction .related_docs_wrapper .general-instruction .instructions-item-holder-wrap {
+  width: 300px;
+  height: 262px;
+  padding: 0 0px 0 18px;
+  font-size: 18px; }
+  .instruction .related_docs_wrapper .general-instruction .instructions-item-holder-wrap .short {
+    font-size: 14px;
+    margin-top: 2px; }
+  .instruction .related_docs_wrapper .general-instruction .instructions-item-holder-wrap .picHolder {
+    cursor: pointer;
+    box-shadow: -4px 14px 9px 0 rgba(51, 58, 81, 0.08);
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; }
+
+.instruction .related_docs_wrapper .instructions-item-holder-wrap {
+  width: 291px;
+  height: 262px; }
+
+.instruction .scenariosImageFixClass:after {
+  content: ' ';
+  height: 50px;
+  width: 50px;
+  opacity: 0.5; }
+
+.instruction .divText_anchor_wrap, .instruction .divText_anchor_wrap:focus, .instruction .divText_anchor_wrap:hover {
+  text-decoration: none;
+  color: inherit; }
+
+.instruction .more_instructions_inner_wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 767px) {
+    .instruction .more_instructions_inner_wrapper {
+      flex-wrap: nowrap;
+      width: 100%;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin-bottom: 50px; } }
+  .instruction .more_instructions_inner_wrapper .more_instruction {
+    flex-basis: 50%; }
+  .instruction .more_instructions_inner_wrapper .inst-wrapper {
+    /*width: 290px;*/
+    box-shadow: 10px 8px 40px 0 rgba(51, 58, 81, 0.16);
+    max-width: 291px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 18px 0 18px 0;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      .instruction .more_instructions_inner_wrapper .inst-wrapper {
+        margin: 0 7px;
+        width: 150px;
+        box-shadow: none;
+        height: 183px;
+        text-align: center; } }
+    @media only screen and (min-width: 769px) {
+      .instruction .more_instructions_inner_wrapper .inst-wrapper {
+        height: 200px; } }
+    .instruction .more_instructions_inner_wrapper .inst-wrapper img {
+      height: 31px;
+      width: 31px;
+      margin-top: 30px;
+      margin-right: 34px; }
+      @media only screen and (max-width: 767px) {
+        .instruction .more_instructions_inner_wrapper .inst-wrapper img {
+          margin: 20px auto;
+          display: block;
+          position: relative;
+          top: 15px; } }
+    .instruction .more_instructions_inner_wrapper .inst-wrapper p {
+      overflow: hidden;
+      font-size: 14px; }
+      @media screen and (min-width: 769px) {
+        .instruction .more_instructions_inner_wrapper .inst-wrapper p {
+          max-height: 45px; } }
+      @media screen and (max-width: 768px) {
+        .instruction .more_instructions_inner_wrapper .inst-wrapper p {
+          max-height: 51px; } }
+    .instruction .more_instructions_inner_wrapper .inst-wrapper .text {
+      margin: 8px 34px; }
+      @media only screen and (max-width: 767px) {
+        .instruction .more_instructions_inner_wrapper .inst-wrapper .text {
+          margin: 8px 20px; } }
+      .instruction .more_instructions_inner_wrapper .inst-wrapper .text h3 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #24263d;
+        margin-bottom: 10px; }
+        @media only screen and (max-width: 767px) {
+          .instruction .more_instructions_inner_wrapper .inst-wrapper .text h3 {
+            font-size: 18px; } }
+    .instruction .more_instructions_inner_wrapper .inst-wrapper .short {
+      /*max-height: 35px;*/
+      font-size: 16px;
+      line-height: 1.25;
+      color: #24263d; }
+      .instruction .more_instructions_inner_wrapper .inst-wrapper .short.ks-html-shell {
+        font-size: 16px !important; }
+      @media only screen and (max-width: 767px) {
+        .instruction .more_instructions_inner_wrapper .inst-wrapper .short {
+          font-size: 14px;
+          text-align: center;
+          /*max-height: 48px;*/ }
+          .instruction .more_instructions_inner_wrapper .inst-wrapper .short.ks-html-shell {
+            font-size: 14px !important; } }
+    .instruction .more_instructions_inner_wrapper .inst-wrapper .readmore {
+      font-family: Heebo;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.06;
+      letter-spacing: normal;
+      color: #5062ec;
+      position: absolute;
+      bottom: 30px; }
+      @media only screen and (max-width: 767px) {
+        .instruction .more_instructions_inner_wrapper .inst-wrapper .readmore {
+          text-align: center;
+          width: 100%;
+          display: inline-block;
+          margin-top: 16px;
+          left: 0;
+          bottom: 20px; } }
+
+.instruction .div_cat_items {
+  margin-top: 18px; }
+  @media only screen and (max-width: 768px) {
+    .instruction .div_cat_items {
+      display: inline-flex;
+      overflow-x: scroll; } }
+  @media only screen and (min-width: 769px) {
+    .instruction .div_cat_items {
+      margin-right: -5px; } }
+  .instruction .div_cat_items .instructions-item-holder-wrap {
+    /*.picHolderImage {
+                width: 298px;
+                max-width: 298px;
+                height: 130px;
+                max-height: 130px;
+            }*/ }
+    @media only screen and (max-width: 767px) {
+      .instruction .div_cat_items .instructions-item-holder-wrap {
+        margin-bottom: 15px;
+        width: 298px;
+        height: 262px;
+        /*background-color: white;*/
+        border-radius: 20px; } }
+
+.instruction .services_wrapper, .instruction .faq_wrapper, .instruction .related_docs_wrapper {
+  margin-top: 70px;
+  margin-bottom: 60px; }
+
+.serv_item img.faq_collapse_image, .question img.faq_collapse_image {
+  float: left; }
+
+/*********************************************Instruction In *************************************/
+@media only screen and (max-width: 768px) {
+  .instruction_in {
+    background-color: #f5f7f9; } }
+
+.instruction_in .fixedTitle {
+  position: fixed;
+  top: 0;
+  height: auto !important;
+  z-index: 9000; }
+
+.instruction_in .title {
+  width: 100%;
+  min-height: 70px;
+  background-image: linear-gradient(96deg, #5062ec -2%, #24274a 105%); }
+  .instruction_in .title h1 {
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+    color: #ffffff;
+    line-height: 2;
+    margin-bottom: 0; }
+
+.instruction_in .container {
+  margin-top: 40px; }
+  .instruction_in .container.pakar-container .servicesAndEase_wrapper {
+    margin-bottom: 120px; }
+  .instruction_in .container .intro {
+    font-size: 16px;
+    text-align: right;
+    color: #24263d; }
+
+.instruction_in .pakar-container .servicesAndEase_wrapper {
+  margin-bottom: 120px; }
+  .instruction_in .pakar-container .servicesAndEase_wrapper .serv-body {
+    padding: 10px 25px 30px 25px; }
+
+.instruction_in .instructions_list_wrapper {
+  margin-top: 37px; }
+
+.instruction_in h2 {
+  font-size: 22px;
+  font-weight: 900;
+  color: #373f79; }
+
+.instruction_in .mask {
+  margin-top: 20px;
+  border-radius: 30px;
+  max-width: 600px;
+  min-height: 80px;
+  box-shadow: 10px 8px 40px 0 rgba(51, 58, 81, 0.16); }
+  .instruction_in .mask .sub_title {
+    border-radius: 25px;
+    background: white;
+    margin-bottom: 60px; }
+    .instruction_in .mask .sub_title .subtitle_inner_wrapper {
+      border-radius: 25px;
+      padding-bottom: 5px;
+      background: linear-gradient(to right, rgba(227, 227, 227, 0.3), #e3e3e3 53%, rgba(227, 227, 227, 0.3)) left bottom white no-repeat;
+      background-size: 100% 2px;
+      /* if linear-gradient, we need to resize it */ }
+    .instruction_in .mask .sub_title .subtitle_inner_wrapper:first-child .subInstrucionHead {
+      border-radius: 10px 10px 0 0; }
+    .instruction_in .mask .sub_title .subtitle_inner_wrapper:last-child .subInstrucionHead {
+      border-radius: 0 0 10px 10px; }
+    .instruction_in .mask .sub_title .subtitle_inner_wrapper:only-child .subInstrucionHead {
+      border-radius: 10px; }
+    .instruction_in .mask .sub_title a, .instruction_in .mask .sub_title a:hover, .instruction_in .mask .sub_title align-content:focus {
+      color: inherit;
+      text-decoration: none; }
+    .instruction_in .mask .sub_title .subInstrucionHead {
+      font-size: 16px;
+      font-weight: 500;
+      color: #060606;
+      padding: 22px 30px 22px 5px;
+      background-color: white;
+      box-shadow: none; }
+      .instruction_in .mask .sub_title .subInstrucionHead.defaultcursor {
+        cursor: default; }
+      .instruction_in .mask .sub_title .subInstrucionHead .external_link {
+        width: unset !important; }
+      .instruction_in .mask .sub_title .subInstrucionHead a {
+        width: 100%;
+        display: inline-block; }
+      .instruction_in .mask .sub_title .subInstrucionHead .subInstructionHeadText {
+        width: 87%;
+        display: inline-block;
+        padding-top: 7px; }
+        @media only screen and (max-width: 767px) {
+          .instruction_in .mask .sub_title .subInstrucionHead .subInstructionHeadText {
+            width: 76%; } }
+      .instruction_in .mask .sub_title .subInstrucionHead .arrowImage {
+        /*width:30px;
+                    height:30px;*/
+        float: left;
+        border: #4B5CDB 1px solid;
+        padding: 13px 11px;
+        border-radius: 60px;
+        margin-left: 30px; }
+        .instruction_in .mask .sub_title .subInstrucionHead .arrowImage.blue {
+          background: #4B5CDB; }
+        .instruction_in .mask .sub_title .subInstrucionHead .arrowImage.none {
+          background: inherit; }
+    .instruction_in .mask .sub_title .subInstructionBody {
+      font-size: 16px;
+      color: #24263d;
+      background-color: #f9f9ff;
+      border-radius: 15px;
+      padding: 22px 30px; }
+      .instruction_in .mask .sub_title .subInstructionBody .external_link {
+        margin: 16px 0 10px 0; }
+      .instruction_in .mask .sub_title .subInstructionBody .subInstructionBody_text {
+        width: 87%;
+        display: inline-block; }
+
+.defaultBG {
+  background: inherit !important; }
+
+/*Styling for both sub category and category*/
+.serv_item {
+  /*min-height: 170px;*/
+  /*opacity: 0.3;*/
+  background-color: rgba(212, 212, 212, 0.3);
+  padding: 20px 10px 20px 10px;
+  border-bottom: solid 1px #d4d4d4;
+  margin: 0;
+  /*&:last-child {
+        border: none;
+    }*/ }
+
+.last_update {
+  line-height: 0;
+  padding-bottom: 5px; }
+  .last_update span {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: #c91534;
+    margin-right: 4px;
+    position: relative;
+    top: -2px; }
+
+/*.external_link_wrapper {
+    width: 299px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #edefff;
+    text-align: center;
+    padding-top: 6px;
+}*/
+.external_link {
+  border-radius: 10px;
+  background-color: #edefff;
+  padding: 11px 25px;
+  margin: 16px 30px 10px 30px;
+  display: inline-block;
+  color: #5062ec !important;
+  font-size: 14px;
+  font-weight: 500;
+  /*margin-right: 10px;
+    margin-right: 20px;*/
+  margin-left: 5px; }
+
+.servicesAndEase_wrapper h2 {
+  margin-top: 70px;
+  margin-bottom: 20px; }
+
+.title {
+  position: relative;
+  line-height: 1.1; }
+  .title .container.pakar-container {
+    margin-top: 0; }
+    @media screen and (max-width: 768px) {
+      .title .container.pakar-container .instructions-title {
+        padding-right: 15px;
+        line-height: 1.1;
+        margin-top: 15px; } }
+  .title .titleBackButton {
+    position: absolute;
+    cursor: pointer; }
+    @media screen and (max-width: 768px) {
+      .title .titleBackButton {
+        right: 25px;
+        top: 25px; } }
+    @media screen and (min-width: 769px) {
+      .title .titleBackButton {
+        right: 340px;
+        top: 25px; } }
+
+/*Fixing scenarios lobby inside instruction.aspx*/
+.instruction .picHolderImage, .instruction_in .picHolderImage {
+  height: auto !important; }
+
+.instruction .divText_anchor_wrap h3 {
+  font-weight: 800; }
+
+.instruction .divText_anchor_wrap p {
+  font-size: 16px !important;
+  width: 88%; }
+
+.instruction .divText_anchor_wrap .bottom button {
+  margin-left: 15px !important; }
+
+.instruction .divText_anchor_wrap .bottom span {
+  font-size: 14px !important; }
+
+.no-link-instructions {
+  cursor: default; }
+  .no-link-instructions .sub_title {
+    color: black !important; }
+
+.search-citymode-popup {
+  text-align: center;
+  font-family: Heebo;
+  border-radius: 15px; }
+  .search-citymode-popup .modal-header {
+    height: 58px;
+    border-radius: 15px;
+    box-shadow: 0 1px 18px 0 rgba(17, 17, 17, 0.1);
+    background-color: #ffffff; }
+    .search-citymode-popup .modal-header .close {
+      opacity: 1;
+      position: absolute;
+      left: 23px;
+      top: 23px; }
+  .search-citymode-popup .modal-body {
+    background-color: #f5f7f9;
+    padding-bottom: 51px;
+    border-radius: 15px; }
+    .search-citymode-popup .modal-body img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain; }
+    .search-citymode-popup .modal-body h2 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: #24263d; }
+    .search-citymode-popup .modal-body p.subtitle {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      color: #6d6d6d; }
+    .search-citymode-popup .modal-body p.info {
+      text-align: center;
+      max-width: 50%;
+      font-size: 14px;
+      color: #282b46;
+      margin: auto;
+      margin-top: 18px; }
+    .search-citymode-popup .modal-body div {
+      width: 223px;
+      height: 32px;
+      border-radius: 22px;
+      box-shadow: 0 0 14px 0 rgba(51, 58, 81, 0.09);
+      border: solid 1px #5062ec;
+      background-color: #5062ec;
+      margin: auto;
+      margin-top: 44px; }
+      .search-citymode-popup .modal-body div a {
+        line-height: 2.2;
+        font-family: Heebo;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: right;
+        color: #ffffff; }
+        .search-citymode-popup .modal-body div a :hover {
+          text-decoration: none; }

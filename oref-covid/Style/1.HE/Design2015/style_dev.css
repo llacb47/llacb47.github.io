@@ -1,0 +1,549 @@
+﻿.dbg 
+{
+    background-color:yellow !important;
+    color:#000000 !important;
+    width:100% !important;
+    text-align:left !important;
+}
+
+ul.dropdown-menu li {
+    float: none;
+}
+
+/**/
+
+   
+
+header .menu .navbar-default .navbar-nav > .active > a:not(.home) {
+    padding-bottom: 9px !important;
+}
+
+header .menu .active a {
+    border-bottom: none;
+    padding-bottom: inherit !important;
+}
+
+
+header .menu  > a {
+    border-bottom:  5px solid #fe6f3e !important;
+}
+
+.square_banners.no_banners, .square_banners.no_top_banner {
+    background: none;
+}
+
+.usefulLinks .linksContainer {
+    height: 110px;
+    overflow: hidden;
+}
+
+.forYishuv li {
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.slider .text {
+    direction: rtl;
+}
+.alert .alertInfo .info .area {
+    width:90%;
+
+}
+.slider .oneLine2 {
+    height: 34px;
+}
+
+.instruction .autocomplete-noresults {
+    width:auto;
+    max-width : 258px;
+    position: absolute;
+    right: 98px;
+    padding: 5px;
+    background-color: #3B3A3A /*hsl(0, 0%, 34%)*/;
+    color: white;
+}
+    .instruction .autocomplete-noresults:hover {
+        cursor: pointer;
+    }
+    .instruction .autocomplete-noresults.houseNoresults {
+
+        right: 259px !important;
+        top: 25px;
+    }
+.city-tab .autocomplete-noresults {
+    width:auto;
+    max-width : 258px;
+    position: absolute;
+    right: 31px;
+    padding: 5px;
+    background-color: #3B3A3A /*hsl(0, 0%, 34%)*/;
+    color: white;
+    top: 34px;
+}
+    .city-tab .autocomplete-noresults:hover {
+        cursor: pointer;
+    }
+    .city-tab .autocomplete-noresults.houseNoresults {
+
+        right: 259px !important;
+        top: 25px;
+    }
+
+
+
+
+
+.ui-autocomplete li {
+    background-color: #E8ECF2;
+    max-width:500px;
+    max-height:150px;
+    overflow-y: auto;
+    z-index:10;
+}
+.ui-autocomplete li:hover {
+    background-color: #E8ECF2;
+}
+/*.ui-autocomplete li.ui-menu-item a {
+
+    background-color: #E8ECF2;
+    color:#000000;
+    text-decoration: none;
+}*/
+.ui-autocomplete li.ui-menu-item a:hover {
+
+ 
+}
+
+@media only screen and (max-width: 769px) {
+
+    .ui-autocomplete li {
+
+        max-width:260px;
+    }
+
+}
+
+
+
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+/*.ui-corner-all {
+    color: white !important;
+    padding: 5px;
+}*/
+
+.rightContent .forYishuv .searchButtonDis {
+    background: url("../../../Images/Design2015/search_dis_regular.png") no-repeat !important;
+}
+
+.ri_site_settings_line {
+    max-height: 45px;
+    overflow: hidden;
+}
+
+
+#city-guidelines-popup .full-description {
+    display: none;
+    padding: 10px 30px;
+    height: 357px;
+    position: relative;
+    overflow: auto; /* 12.8 */
+}
+
+    #city-guidelines-popup .full-description li {
+        list-style: initial;
+    }
+
+#city-guidelines-popup a.back {
+    position: relative;
+    /*left: 20px;
+    bottom: 10px;*/
+    font-size: 19px;
+    text-decoration: none;
+    float:left;
+}
+
+#city-guidelines-popup .full-description .read-more {
+    display: none;
+}
+
+
+#city-guidelines-popup .content .info li .desc {
+    padding-right: 0px;
+    width: 290px;
+    position: relative;
+    line-height: 18px;
+}
+
+
+
+
+.orange-popup .header {
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+    .orange-popup .header span {
+        font-weight: bold;
+        font-size: 23px !important;
+        position: initial;
+    }
+
+.message_warn {
+    /*color: red;*/
+    display: inline-block;
+    width: 244px;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 20px 10px 0px;
+    /*background: url(../../../Images/Shared/general_2012/warn.gif) right top no-repeat;*/
+}
+#alerts-popup .footer {
+    max-height: 50px;
+    overflow: hidden;
+}
+
+#alerts-popup .footer span{
+    display:block;
+    max-height: 50px;
+    overflow: hidden;
+    line-height:26px;
+}
+/*ALERT*/
+.alertHolder .scroll
+{
+    max-height:199px;
+    overflow-y:auto;
+}
+
+    /************************** EMERGENCY PAGE ***************************/
+
+.emergencyPage .alertHolder .scroll
+    {
+    max-height:565px;
+    overflow-y:auto;
+}
+.emergency-message span {
+    /*display:block;*/
+    line-height:18px;
+}
+header .menu .navbar-nav > li > a {
+    padding-bottom: 18px;
+}
+/********************************************************************************/
+/* CSS for Accessibility Menu */
+/********************************************************************************/
+/*.accessibility_menu { display: none; }*/
+h1.accessibility_menu,
+h2.accessibility_menu,
+h3.accessibility_menu,
+h4.accessibility_menu,
+h5.accessibility_menu,
+h6.accessibility_menu,
+h7.accessibility_menu
+{
+	position: absolute;
+	/*top: -9999px;*/
+    left:0;
+    /*border:solid 1px red;*/
+}
+div.accessibility_menu
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+.accessibility_menu ul
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+.accessibility_menu ul li
+{
+	height: 30px;
+	overflow: hidden;
+}
+.accessibility_menu ul li a
+{
+	background: #0000ff !important;
+	color: #fff;
+	text-decoration: none;
+}
+.accessibility_menu ul li a:hover,
+.accessibility_menu ul li a:active,
+.accessibility_menu ul li a:focus
+{
+	background: #0000ff !important;
+	color: #fff;
+	text-decoration: underline;
+}
+#city-guidelines-popup .content .details > div.message_warn {
+width:100%;
+margin:0;
+padding-bottom:5px;
+}
+
+.slider .text h3
+{
+    width: 80%;
+    max-height: 17px;
+    overflow: hidden;
+}
+.slider .text p
+{
+    width: 80%;
+    max-height: 17px;
+    overflow: hidden;
+}
+.bx-wrapper .bx-pager .bx-pager-item, .bx-wrapper .bx-controls-auto .bx-controls-auto-item
+{
+    float:left;
+}
+.rightContent .slider .bx-wrapper .bx-pager.bx-default-pager a
+{
+    margin: -7px 3px 13px 3px;
+}
+
+.rightContent .slider .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager
+{
+    left:37px;
+}
+.rightContent .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+{
+    left: 5px;
+    bottom: 5px;
+}
+/*override font-family inline style from ks html field */
+.inner_page p,
+.inner_page span
+{
+    /*font-family:'almoni-regular' !important;*/
+}
+.info ul li .desc span
+{
+	font-family:almoni-regular !important;
+    color:#000 !important;
+}
+/*fix side bar*/
+ul.s_m_lev_3 li.s_m_lev_3_li span.s_m_lev_3_a,
+ul.s_m_lev_3 li.s_m_lev_3_li_on span.s_m_lev_3_a
+{
+    color: #fff;
+    font-family: 'almoni-regular';
+    font-size: 0.938em;
+}
+
+.noFoundAlerts
+{
+    text-align:right;
+    height:30px;
+    padding-top:10px;
+    padding-bottom:25px;
+    padding-right:10px;
+    font-family: 'almoni-regular';
+}
+
+.alertInSpace .title .sound_on_off
+{
+    display:inline-block;
+    width:28px;
+    height:28px;
+    margin:4px 11px 0 11px;
+}
+
+.alertInSpace .title .sound {
+    background: url("../../../Images/Design2015/sound_on.png");
+}
+
+.alertInSpace .title .soundoff {
+    background: url("../../../Images/Design2015/sound_off.png");
+}
+.alertInSpace .alertList
+{
+     clear:both;
+}
+.city_autocomplete
+{
+    z-index: 100;
+    max-height: 150px; 
+    overflow-y: auto;
+    max-width: 170px;
+    background-color:#3B3A3A;
+    color: white!important;
+    margin-top: 6px;
+}
+.city_autocomplete > li
+{
+    padding-right: 10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    color:white;
+}
+
+.area_Complete
+{
+    z-index: 100;
+    max-height: 150px; 
+    overflow-y: auto;
+    max-width: 170px;
+    background-color:#3B3A3A;
+    color: white!important;
+    margin-top: 6px;
+}
+.area_Complete > li
+{
+    padding-right: 10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    color:white;
+}
+.socialTab iframe{
+    border:none;
+    overflow-y:scroll;
+    height: 496px;
+}
+.emergencyPage .socialTab iframe {
+    height:564px;
+}
+.emergencyPage .socialTab.small iframe {
+    height:200px;
+}
+@media (min-width: 1140px){
+    .leftContent .socialTab.small {
+        min-height:200px;
+    }
+}
+@media (min-width: 768px)
+{
+    .city_autocomplete {
+        max-width: 260px;
+        max-height: 150px; 
+    }
+}
+@media (min-width: 1140px)
+{
+    .city_autocomplete {
+        max-width: 260px;
+        max-height: 300px; 
+    }
+    span.ri_site_settings_line {
+        display: block;
+        height: 19px;
+        overflow: hidden;
+    }
+   
+}
+
+ .at4-arrow {
+        float:left !important;
+        width:40px !important;
+        background-image:none !important;
+    }
+.at-share-close-control {
+        float:left !important;
+        width:40px !important;
+
+}
+
+@media(max-width:400px){
+    #divStreetErr{
+        margin-top:20px;
+    }
+}
+.article_buttons .btn3 {
+    width:103px;
+}
+.article_buttons .btn3 a {
+    float: none;
+}
+.city_his_autocomplete,.street_his_autocomplete
+{
+    font-size:17px;
+    z-index: 100!important;
+    max-height: 150px; 
+    overflow-y: auto;
+    max-width: 131px;
+    background-color:rgba(241, 241, 242, 0.901961)!important;
+    color:black!important;
+    /*color: rgb(56, 56, 56)!important;*/
+    margin-top: 6px;
+}
+.city_his_autocomplete > li,.street_his_autocomplete > li
+{
+    padding-right: 10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    color:black!important;
+  
+}
+.city_his_autocomplete li:hover,.street_his_autocomplete li:hover {
+    background-color:#c9c8c8 /*#262626*/;
+    color:black!important;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+.city_his_autocomplete .ui-menu-item a ,.street_his_autocomplete .ui-menu-item a{
+    color:#000;
+}
+/*.alert_search label {
+        width: 25% !important;
+    }*/
+
+.contact_form_new .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
+        background-color: #DADCE4;
+        background-image: none;
+        color:black;
+    }
+.navbar-collapse .search-box
+{
+    float:left;
+    margin: 0 0 0 127px;
+}
+
+.search-box
+{
+    margin: 6px 10px 14px;
+    top: 20px;
+    left: 0;
+    padding-right: 8px;
+}
+
+.search-btn
+{
+    background: url(../../../Images/Design2015/search-icon.png) no-repeat transparent;
+    left: 4px;
+}
+
+.search_results .search-box
+{
+    margin: 2px 10px 20px;
+}
+.search-icon-only
+{
+    left: 14px;
+}
+.popupContentAbout .bottom .agree {
+    left:20px;
+}
+
+
+
+
+#silenceWaveMenu .form-group
+{
+    position:relative;
+}
+
+
+
+
+

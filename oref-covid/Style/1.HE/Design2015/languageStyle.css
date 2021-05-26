@@ -1,0 +1,11 @@
+﻿body {
+  /******force zoomd css******/
+  /******force zoomd css******/ }
+  @media screen and (max-width: 767px) {
+    body .logoHolder .logo {
+      margin-right: unset !important; }
+    body div#zoomd_mobile {
+      right: unset !important; } }
+  @media screen and (max-width: 360px) and (min-width: 359px) {
+    body div#zoomd_mobile {
+      right: unset !important; } }
